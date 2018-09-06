@@ -5,7 +5,7 @@ output:
   html_document: default
 ---
 
-```{r loading}
+```{r loading1}
 # load packages
 library(tidyverse)
 

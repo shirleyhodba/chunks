@@ -9,6 +9,8 @@ library(tidyverse)
 
 # Loading the Boston city payroll
 payroll <- read_csv("data/bostonpayroll2013.csv")
+colnames(payroll) <- make.names(colnames(payroll))
+payroll_total <- select(payroll, NAME, TITLE, DEPARTMENT, TOTAL.EARNINGS)
 ```
 
 Let's look at the data in R Markdown with a new package called [`DT`](https://rstudio.github.io/DT/) that uses the Datatables [jquery library](https://datatables.net/).
